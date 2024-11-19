@@ -1,0 +1,51 @@
+<svg width="700" height="150" xmlns="http://www.w3.org/2000/svg" style="background-color: #000;">
+  <style>
+    /* Define the text style for both words */
+    .text {
+      font-family: 'Montserrat', sans-serif; /* Modern font */
+      font-weight: bold;
+      font-size: 60px;
+      fill: url(#gradient); /* Gradient fill for smooth color transition */
+      animation: glowPulse 4s infinite; /* Slower pulsing effect (increased to 5s) */
+    }
+
+    /* Animation to pulse the glow in all directions */
+    @keyframes glowPulse {
+      0% {
+        filter: drop-shadow(0 0 30px rgba(0, 188, 212, 1)) /* Start with a medium glow */
+                drop-shadow(0 0 50px rgba(0, 188, 212, 0.6))
+                drop-shadow(0 0 80px rgba(0, 188, 212, 0.3));
+      }
+      50% {
+        filter: drop-shadow(0 0 70px rgba(0, 188, 212, 1)) /* Maximum glow size */
+                drop-shadow(0 0 140px rgba(0, 188, 212, 0.8))
+                drop-shadow(0 0 200px rgba(0, 188, 212, 0.5));
+      }
+      100% {
+        filter: drop-shadow(0 0 30px rgba(0, 188, 212, 1)) /* Back to medium glow */
+                drop-shadow(0 0 50px rgba(0, 188, 212, 0.6))
+                drop-shadow(0 0 80px rgba(0, 188, 212, 0.3));
+      }
+    }
+
+    /* Hover effect: intensifies the glow when hovered over */
+    .text:hover {
+      fill: #00bcd4; /* Cyan glow on hover */
+      filter: drop-shadow(0 0 70px rgba(0, 188, 212, 1))
+              drop-shadow(0 0 140px rgba(0, 188, 212, 0.8))
+              drop-shadow(0 0 200px rgba(0, 188, 212, 0.5));
+    }
+  </style>
+
+  <!-- Gradient definition with cyan color -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #00e5ff; stop-opacity: 1" /> <!-- Light cyan -->
+      <stop offset="100%" style="stop-color: #00bcd4; stop-opacity: 1" /> <!-- Deep cyan -->
+    </linearGradient>
+  </defs>
+
+  <!-- Text elements for both words -->
+  <text x="50" y="100" class="text">Wealthy</text>
+  <text x="280" y="100" class="text">Wise</text> <!-- Reduced space by adjusting x position -->
+</svg>
