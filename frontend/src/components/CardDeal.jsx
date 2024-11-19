@@ -11,7 +11,7 @@ const CardDeal = () => (
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Everything you need to manage your personal finances and investments
       </p>
-      <a href="https://crypto-hunter.netlify.app/" target="_blank">
+      <a href="https://main.d35zstmrhbssqd.amplifyapp.com/" target="_blank">
         <Button styles={`mt-10`} />
       </a>
     </div>
