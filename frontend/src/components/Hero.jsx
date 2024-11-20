@@ -24,7 +24,7 @@ const Hero = () => {
             The Next <br className="sm:block hidden" />{' '}
             <span className="text-gradient">Generation </span>{' '}
           </h1>
-          <a href="https://adjusted-dragon-53.accounts.dev/sign-in?redirect_url=https%3A%2F%2Fmain.d3kngxbpu4heat.amplifyapp.com%2Fdashboard/" target="_blank">
+          <a href="https://main.d3kngxbpu4heat.amplifyapp.com/dashboard" target="_blank">
             <div className="ss:flex hidden md:mr-4 mr-0">
               <GetStarted />
             </div>
